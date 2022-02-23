@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: no
+  connection: local
+
+  roles:
+    - dotfiles
+    - fonts
+    - ohmyzsh

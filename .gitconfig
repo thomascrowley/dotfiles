@@ -55,7 +55,7 @@
 
 [init]
     defaultBranch = main
-    templatedir = /Users/Thomas.Crowley/.git-templatedir
+    templatedir = ~/.git-templatedir
 
 [filter "lfs"]
     process = git-lfs filter-process

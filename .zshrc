@@ -102,17 +102,16 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tar=gtar
-alias sed=gsed
-alias whatismyip="curl ifconfig.me"
+# Aliases
 alias gcloudwhoami='gcloud auth list --format='\''value(account)'\'' --filter='\''status="ACTIVE"'\'
-alias python='python3'
+alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pip='pip3'
-alias ruby-doctor='curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash'
-alias ruby='docker run -it ruby:3.2-rc ruby'
+alias python='python3'
+alias sed=gsed
+alias tar=gtar
+alias tf=terraform
+alias whatismyip="curl ifconfig.me"
+alias zshconfig="mate ~/.zshrc"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -130,8 +129,7 @@ jq -R 'split(".")|.[0:2]|map(@base64d)|map(fromjson)'<<< $1
 }
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/$HOME/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
 
 export GPG_TTY=$(tty)

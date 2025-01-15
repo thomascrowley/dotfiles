@@ -68,7 +68,10 @@
 
 # https://markentier.tech/posts/2021/02/github-with-multiple-profiles-gpg-ssh-keys/
 [include]
-    path = ~/.gitconfig.personal
+    path = ~/.config/git/personal
 
 [includeIf "gitdir:~/source/work/"]
-    path = ~/.gitconfig.work
+    path = ~/.config/git/work
+
+[includeIf "gitdir:/workspaces/"]
+    path = ~/.config/git/vscode

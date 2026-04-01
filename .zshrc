@@ -5,8 +5,6 @@
 #    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 #fi
 
-eval "$(starship init zsh)"
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -135,3 +133,6 @@ export PATH="/Users/thomascrowley/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 export GPG_TTY=$(tty)
+
+# Ensure Starship is initialized at the very end
+eval "$(starship init zsh)"

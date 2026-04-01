@@ -73,4 +73,11 @@
     path = ~/.config/git/personal
 
 [includeIf "gitdir:~/source/clients/"]
-    path = ~/.config/git/clients
+  path = ~/.config/git/clients
+
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
